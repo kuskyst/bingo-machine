@@ -15,8 +15,8 @@ export default {
 </script>
 <style scoped>
 .icon {
-  width: 72px;
-  height: 72px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   margin: 6px;
   transition: 1s;

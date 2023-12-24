@@ -1,8 +1,8 @@
 <template>
   <v-container class="bk-pink">
     <v-row class="p-40">
-      <v-col class="p-12 b-dash-pink br-20 tx-center fs-80">
-        <p v-if="!loading" v-text="selectNum" />
+      <v-col class="p-12 b-dash-pink br-20 tx-center" style="height: 160px;">
+        <p v-if="!loading" v-text="selectNum" class="fs-80" />
         <client-only v-if="loading">
           <vue-loading type="spiningDubbles" color="#fed3e6" :size="{ width: '120px', height: '120px' }" />
         </client-only>
@@ -35,7 +35,7 @@ export default {
   },
   data() {
     return {
-        selectNum: '↓STARTをおしてね↓',
+        selectNum: '↓START↓',
         loading: false,
         max: 75,
         callList: [],
@@ -61,17 +61,20 @@ export default {
       setTimeout(() => {
         this.loading = false
         this.calledList.push(this.selectNum)
-      }, 500)
+      }, 700)
     },
     reset() {
       this.uncallList = [...Array(this.max)].map((_, i) => i + 1)
       this.calledList = []
-      this.selectNum = '↓STARTをおしてね↓'
+      this.selectNum = '↓START↓'
     },
   }
 }
 </script>
 <style scoped>
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700);
+* { font-family: 'Noto Sans JP', sans-serif; -webkit-touch-callout: none; }
 .fs-80 { font-size: 80px; }
 .tx-center { text-align: center; }
 .p-12 { padding: 12px; }
