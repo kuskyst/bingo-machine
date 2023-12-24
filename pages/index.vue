@@ -54,7 +54,6 @@ export default {
       if (this.uncallList.length != 0) {
         this.selectNum = this.uncallList[Math.floor(Math.random() * this.uncallList.length)]
         this.uncallList = this.uncallList.filter((n) => n != this.selectNum)
-        this.calledList.push(this.selectNum)
       } else {
         this.selectNum = 'おわり'
       }
