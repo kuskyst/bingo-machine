@@ -1,10 +1,13 @@
 import colors from 'vuetify/es5/util/colors'
 
 export default {
+  mode: 'spa',
+  router: {
+    base: '/bingo-machine'
+  },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s - bingo',
-    title: 'bingo',
+    title: 'bingo-machine',
     htmlAttrs: {
       lang: 'en'
     },
@@ -48,7 +51,6 @@ export default {
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
-    customVariables: ['~/assets/variables.scss'],
     theme: {
       dark: true,
       themes: {
