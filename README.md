@@ -1,4 +1,9 @@
-# bingo
+# bingo-machine
+クリスマス会で使うかも？
+| # | |
+| ---- | ---- |
+| Language| Nuxt.js 2 (Vue.js 2) |
+| UI Component | Vuetify 2, vue-loading-template |
 
 ## Build Setup
 
