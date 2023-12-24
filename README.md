@@ -5,8 +5,7 @@ https://kuskyst.github.io/bingo-machine/
 
 | # | |
 | ---- | ---- |
-| Language| Nuxt.js
-2 (Vue.js 2) |
+| Language| Nuxt.js 2 (Vue.js 2) |
 | UI Component | Vuetify 2, vue-loading-template |
 
 ![スクリーンショット 2023-12-24 200023](https://github.com/kuskyst/bingo-machine/assets/126965999/30a6de2d-3019-4087-9c67-9e6499bcecb8)
